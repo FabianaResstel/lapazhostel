@@ -4,7 +4,7 @@ function Hero() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
-            <p className="hero-eyebrow">WELCOME TO LA PAZ</p>
+            <p className="hero-eyebrow">WELCOME TO LA PAZ HOSTEL</p>
 
             <h1>Your home in La Paz.</h1>
 
