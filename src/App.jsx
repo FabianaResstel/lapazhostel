@@ -6,6 +6,7 @@ import About from "./components/About";
 import WhyStay from "./components/WhyStay";
 import LaPaz from "./components/LaPaz";
 import ThingsToDo from "./components/ThingsToDo";
+import Restaurants from "./components/Restaurants";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <WhyStay />
         <LaPaz />
         <ThingsToDo />
+        <Restaurants />
       </main>
     </>
   );

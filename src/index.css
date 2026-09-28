@@ -261,6 +261,86 @@ body {
   color: #c96b4b;
 }
 
+.restaurants-section {
+  padding: 100px 0;
+  background-color: #f8f3ea;
+}
+
+.restaurants-section h2 {
+  margin-bottom: 20px;
+  color: #173f5f;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.restaurant-card {
+  height: 100%;
+  overflow: hidden;
+  background-color: #fffbf7;
+  border-radius: 20px;
+}
+
+.restaurant-image {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dce8ec;
+  color: #173f5f;
+  font-weight: 600;
+}
+
+.restaurant-card h3 {
+  margin: 24px 24px 14px;
+  color: #173f5f;
+  font-size: 1.35rem;
+}
+
+.restaurant-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 24px 16px;
+  font-size: 0.9rem;
+}
+
+.restaurant-rating span:first-child {
+  color: #e6b84a;
+  letter-spacing: 1px;
+}
+
+.restaurant-rating strong {
+  color: #173f5f;
+}
+
+.restaurant-rating span:last-child {
+  color: #5f5555;
+}
+
+.restaurant-card p {
+  margin: 0 24px 16px;
+  line-height: 1.6;
+}
+
+.restaurant-card .restaurant-address {
+  color: #5f5555;
+  font-size: 0.95rem;
+}
+
+.restaurant-card .btn {
+  margin: 8px 24px 24px;
+  padding: 12px 24px;
+  background-color: #c96b4b;
+  border-color: #c96b4b;
+  color: #f8f3ea;
+}
+
+.restaurant-card .btn:hover {
+  background-color: #a95338;
+  border-color: #a95338;
+  color: #f8f3ea;
+}
+
 @media (max-width: 992px) {
   .hero .btn-primary {
     margin-bottom: 30px;
