@@ -133,6 +133,42 @@ body {
   margin-bottom: 0;
 }
 
+.why-stay-section {
+  padding: 100px 0;
+  background-color: #f8f3ea;
+}
+
+.why-stay-section h2 {
+  margin-bottom: 20px;
+  color: #173f5f;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.section-intro {
+  max-width: 650px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+}
+
+.feature-card {
+  height: 100%;
+  padding: 32px;
+  background-color: #fffbf7;
+  border-radius: 20px;
+}
+
+.feature-card h3 {
+  margin-bottom: 14px;
+  color: #173f5f;
+  font-size: 1.35rem;
+}
+
+.feature-card p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
 @media (max-width: 992px) {
   .hero .btn-primary {
     margin-bottom: 30px;
