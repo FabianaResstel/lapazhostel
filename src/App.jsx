@@ -7,6 +7,9 @@ import WhyStay from "./components/WhyStay";
 import LaPaz from "./components/LaPaz";
 import ThingsToDo from "./components/ThingsToDo";
 import Restaurants from "./components/Restaurants";
+import Contact from "./components/Contact";
+import ContactForm from "./components/ContactForm";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
         <LaPaz />
         <ThingsToDo />
         <Restaurants />
+        <Contact />
+        <ContactForm />
+        <Footer />
       </main>
     </>
   );
