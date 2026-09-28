@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import WhyStay from "./components/WhyStay";
+import LaPaz from "./components/LaPaz";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <About />
         <WhyStay />
+        <LaPaz />
       </main>
     </>
   );
