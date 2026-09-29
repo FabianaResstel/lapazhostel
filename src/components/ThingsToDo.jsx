@@ -4,7 +4,7 @@ function ThingsToDo() {
       {" "}
       <div className="container">
         {" "}
-        <div className="text-center">
+        <div>
           {" "}
           <p className="section-eyebrow">THINGS TO DO</p>{" "}
           <h2>Make the most of your time in La Paz.</h2>{" "}

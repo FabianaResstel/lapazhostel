@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+
 function Footer() {
   return (
     <footer className="footer">
@@ -36,15 +40,42 @@ function Footer() {
 
             <ul>
               <li>
-                <a href="mailto:hello@lapazhostel.com">hello@lapazhostel.com</a>
+                <a href="mailto:hello@lapazhostel.com">
+                  <span>hello@lapazhostel.com</span>
+                </a>
               </li>
 
               <li>
-                <a href="tel:+59121234567">+591 2 123 4567</a>
+                <a href="tel:+59121234567">
+                  <FontAwesomeIcon icon={faPhone} aria-hidden="true" />
+                  <span>+591 2 123 4567</span>
+                </a>
               </li>
 
               <li>
-                <a href="#contact-form">Send us a message</a>
+                <a href="#contact-form">
+                  <FontAwesomeIcon icon={faEnvelope} aria-hidden="true" />
+                  <span>Send us a message</span>
+                </a>
+              </li>
+              <li className="footer-social">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <FontAwesomeIcon icon={faFacebook} />
+                </a>
               </li>
             </ul>
           </div>

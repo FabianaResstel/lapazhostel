@@ -9,7 +9,7 @@ import ThingsToDo from "./components/ThingsToDo";
 import Restaurants from "./components/Restaurants";
 import Contact from "./components/Contact";
 import ContactForm from "./components/ContactForm";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
         <Restaurants />
         <Contact />
         <ContactForm />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

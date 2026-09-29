@@ -2,7 +2,7 @@ function WhyStay() {
   return (
     <section id="why-stay" className="why-stay-section">
       <div className="container">
-        <div className="text-center">
+        <div>
           <p className="section-eyebrow">WHY STAY WITH US</p>
 
           <h2>Everything you need for a great stay.</h2>

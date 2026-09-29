@@ -10,11 +10,26 @@ body {
 }
 
 .hero-eyebrow {
-  margin-bottom: 12px;
+  display: inline-block;
+  margin-bottom: 28px;
+  padding-bottom: 10px;
   color: #c96b4b;
-  font-size: 1.25rem;
+  font-size: 1.7rem;
   font-weight: 700;
   letter-spacing: 2px;
+  border-bottom: 3px solid #e6b84a;
+  position: relative;
+}
+
+.hero-eyebrow::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  bottom: -7px;
+  background-color: #c96b4b;
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .hero h1 {
@@ -96,7 +111,7 @@ body {
 .section-eyebrow {
   margin-bottom: 12px;
   color: #c96b4b;
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -147,7 +162,7 @@ body {
 
 .section-intro {
   max-width: 650px;
-  margin: 0 auto 50px;
+  margin: 0 0 50px;
   line-height: 1.7;
 }
 
@@ -461,6 +476,92 @@ body {
 .contact-form-section .btn:hover {
   background-color: #a95338;
   border-color: #a95338;
+  color: #f8f3ea;
+}
+
+.footer {
+  padding: 70px 0 30px;
+  background-color: #173f5f;
+  color: #f8f3ea;
+}
+
+.footer h2 {
+  margin-bottom: 16px;
+  color: #e6b84a;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.footer h3 {
+  margin-bottom: 20px;
+  color: #e6b84a;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.footer p {
+  max-width: 420px;
+  margin-bottom: 0;
+  color: #dce8ec;
+  line-height: 1.7;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer li {
+  margin-bottom: 12px;
+}
+
+.footer a {
+  color: #dce8ec;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #e6b84a;
+}
+
+.footer li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.footer-social a {
+  font-size: 1.4rem;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(220, 232, 236, 0.25);
+  text-align: center;
+}
+
+.footer-bottom p {
+  max-width: none;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p+p {
+  margin-top: 8px;
+}
+
+.footer-bottom a {
+  color: #e6b84a;
+}
+
+.footer-bottom a:hover {
   color: #f8f3ea;
 }
 

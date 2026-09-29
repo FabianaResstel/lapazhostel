@@ -4,7 +4,7 @@ function Restaurants() {
       {" "}
       <div className="container">
         {" "}
-        <div className="text-center">
+        <div>
           {" "}
           <p className="section-eyebrow">WHERE TO EAT</p>{" "}
           <h2>Good food is part of the adventure.</h2>{" "}
