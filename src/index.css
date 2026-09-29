@@ -185,8 +185,25 @@ body {
 }
 
 .la-paz-section {
+  position: relative;
   padding: 100px 0;
-  background-color: #dce8ec;
+  background-color: #bce5f3;
+}
+
+.la-paz-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--la-paz-background);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.la-paz-section>.container {
+  position: relative;
+  z-index: 1;
 }
 
 .la-paz-section h2 {
@@ -309,6 +326,12 @@ body {
   background-color: #dce8ec;
   color: #173f5f;
   font-weight: 600;
+}
+
+.restaurant-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .restaurant-card h3 {

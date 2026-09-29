@@ -1,6 +1,12 @@
+import laPazBackground from "../images/lapaz-background.jpg";
+
 function LaPaz({ t }) {
   return (
-    <section id="la-paz" className="la-paz-section">
+    <section
+      id="la-paz"
+      className="la-paz-section"
+      style={{ "--la-paz-background": `url(${laPazBackground})` }}
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
