@@ -1,4 +1,14 @@
-import { useState } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  useParams,
+} from "react-router-dom";
+
+import en from "./locales/en";
+import pt from "./locales/pt";
+import es from "./locales/es";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -11,23 +21,44 @@ import Contact from "./components/Contact";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
-function App() {
+const translations = {
+  en,
+  pt,
+  es,
+};
+
+function Page() {
+  const { lang } = useParams();
+  const t = translations[lang];
+
   return (
     <>
-      <Navbar />
+      <Navbar t={t} />
 
       <main>
-        <Hero />
-        <About />
-        <WhyStay />
-        <LaPaz />
-        <ThingsToDo />
-        <Restaurants />
-        <Contact />
-        <ContactForm />
+        <Hero t={t} />
+        <About t={t} />
+        <WhyStay t={t} />
+        <LaPaz t={t} />
+        <ThingsToDo t={t} />
+        <Restaurants t={t} />
+        <Contact t={t} />
+        <ContactForm t={t} />
       </main>
+
       <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/:lang" element={<Page />} />
+        <Route path="*" element={<Navigate to="/en" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,46 +1,41 @@
-function WhyStay() {
+function WhyStay({ t }) {
   return (
     <section id="why-stay" className="why-stay-section">
       <div className="container">
         <div>
-          <p className="section-eyebrow">WHY STAY WITH US</p>
+          <p className="section-eyebrow">{t.whyStay.eyebrow}</p>
 
-          <h2>Everything you need for a great stay.</h2>
+          <h2>{t.whyStay.title}</h2>
 
-          <p className="section-intro">
-            A welcoming place to relax, meet other travelers, and enjoy La Paz
-            at your own pace.
-          </p>
+          <p className="section-intro">{t.whyStay.intro}</p>
         </div>
 
         <div className="row g-4">
           <div className="col-md-6 col-lg-3">
             <div className="feature-card">
-              <h3>Comfortable</h3>
-              <p>
-                A relaxed place to rest and recharge after a day of exploring.
-              </p>
+              <h3>{t.whyStay.comfortable.title}</h3>
+              <p>{t.whyStay.comfortable.text}</p>
             </div>
           </div>
 
           <div className="col-md-6 col-lg-3">
             <div className="feature-card">
-              <h3>Clean & Organized</h3>
-              <p>Clean, well-kept spaces that make your stay comfortable.</p>
+              <h3>{t.whyStay.clean.title}</h3>
+              <p>{t.whyStay.clean.text}</p>
             </div>
           </div>
 
           <div className="col-md-6 col-lg-3">
             <div className="feature-card">
-              <h3>Friendly Staff</h3>
-              <p>A welcoming team ready to help make your visit easier.</p>
+              <h3>{t.whyStay.friendly.title}</h3>
+              <p>{t.whyStay.friendly.text}</p>
             </div>
           </div>
 
           <div className="col-md-6 col-lg-3">
             <div className="feature-card">
-              <h3>Local Knowledge</h3>
-              <p>Helpful tips and recommendations to experience La Paz.</p>
+              <h3>{t.whyStay.local.title}</h3>
+              <p>{t.whyStay.local.text}</p>
             </div>
           </div>
         </div>

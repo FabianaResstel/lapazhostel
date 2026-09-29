@@ -1,20 +1,17 @@
-function Hero() {
+function Hero({ t }) {
   return (
     <section className="hero">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
-            <p className="hero-eyebrow">WELCOME TO LA PAZ HOSTEL</p>
+            <p className="hero-eyebrow">{t.hero.eyebrow}</p>
 
-            <h1>Your home in La Paz.</h1>
+            <h1>{t.hero.title}</h1>
 
-            <p className="hero-text">
-              Stay somewhere friendly, clean, and local while you explore one of
-              Bolivia's most fascinating cities.
-            </p>
+            <p className="hero-text">{t.hero.text}</p>
 
             <a href="#la-paz" className="btn btn-primary">
-              Explore La Paz
+              {t.hero.button}
             </a>
           </div>
 
