@@ -1,3 +1,8 @@
+import valleyImage from "../images/valley-of-the-moon.webp";
+import telefericoImage from "../images/teleferico.jpg";
+import witchesMarketImage from "../images/witches-market.jpg";
+import elAltoImage from "../images/el-alto.jpg";
+
 function ThingsToDo({ t }) {
   return (
     <section id="explore" className="things-to-do-section">
@@ -13,7 +18,12 @@ function ThingsToDo({ t }) {
         <div className="row g-4">
           <div className="col-md-6 col-lg-3">
             <div className="activity-card">
-              <div className="activity-image">Image placeholder</div>
+              <div className="activity-image">
+                <img
+                  src={valleyImage}
+                  alt="Valle de la Luna in La Paz, Bolivia"
+                />
+              </div>
 
               <h3>{t.thingsToDo.activities.valley.title}</h3>
 
@@ -32,7 +42,12 @@ function ThingsToDo({ t }) {
 
           <div className="col-md-6 col-lg-3">
             <div className="activity-card">
-              <div className="activity-image">Image placeholder</div>
+              <div className="activity-image">
+                <img
+                  src={telefericoImage}
+                  alt="Mi Teleférico in La Paz, Bolivia"
+                />
+              </div>
 
               <h3>{t.thingsToDo.activities.cableCar.title}</h3>
 
@@ -51,7 +66,12 @@ function ThingsToDo({ t }) {
 
           <div className="col-md-6 col-lg-3">
             <div className="activity-card">
-              <div className="activity-image">Image placeholder</div>
+              <div className="activity-image">
+                <img
+                  src={witchesMarketImage}
+                  alt="Witches Market in La Paz, Bolivia"
+                />
+              </div>
 
               <h3>{t.thingsToDo.activities.witchesMarket.title}</h3>
 
@@ -70,7 +90,9 @@ function ThingsToDo({ t }) {
 
           <div className="col-md-6 col-lg-3">
             <div className="activity-card">
-              <div className="activity-image">Image placeholder</div>
+              <div className="activity-image">
+                <img src={elAltoImage} alt="El Alto in La Paz, Bolivia" />
+              </div>
 
               <h3>{t.thingsToDo.activities.elAlto.title}</h3>
 

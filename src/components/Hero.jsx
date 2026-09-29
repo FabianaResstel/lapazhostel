@@ -1,3 +1,5 @@
+import heroImage from "../images/hero.jpg";
+
 function Hero({ t }) {
   return (
     <section className="hero">
@@ -17,7 +19,7 @@ function Hero({ t }) {
 
           <div className="col-lg-6">
             <img
-              src="https://images.unsplash.com/photo-1589802829985-817e51171b92?auto=format&fit=crop&w=1200&q=80"
+              src={heroImage}
               alt="Mountain landscape"
               className="img-fluid hero-image"
             />
