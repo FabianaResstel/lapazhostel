@@ -1,34 +1,32 @@
-function Contact() {
+function Contact({ t }) {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
-            <p className="section-eyebrow">GET IN TOUCH</p>
+            <p className="section-eyebrow">{t.contact.eyebrow}</p>
 
-            <h2>We'd love to hear from you.</h2>
+            <h2>{t.contact.title}</h2>
 
-            <p className="contact-intro">
-              Have a question about your stay, La Paz, or what to do in the
-              city? Get in touch with our team.
-            </p>
+            <p className="contact-intro">{t.contact.intro}</p>
 
             <div className="contact-info">
               <p>
-                <strong>Email</strong>
+                <strong>{t.contact.emailLabel}</strong>
                 <br />
                 hello@lapazhostel.com
               </p>
 
               <p>
-                <strong>Phone</strong>
+                <strong>{t.contact.phoneLabel}</strong>
                 <br />
                 +591 2 123 4567
               </p>
 
               <p>
-                <strong>Follow us</strong>
+                <strong>{t.contact.socialLabel}</strong>
                 <br />
+
                 <a
                   href="https://www.instagram.com/"
                   target="_blank"
@@ -36,7 +34,9 @@ function Contact() {
                 >
                   Instagram
                 </a>
+
                 {" · "}
+
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
@@ -50,15 +50,12 @@ function Contact() {
 
           <div className="col-lg-6">
             <div className="contact-highlight">
-              <h3>Planning your stay?</h3>
+              <h3>{t.contact.highlightTitle}</h3>
 
-              <p>
-                Send us a message and we'll be happy to help with questions
-                about the hostel, the city, or your visit.
-              </p>
+              <p>{t.contact.highlightText}</p>
 
               <a href="#contact-form" className="btn">
-                Send us a message
+                {t.contact.button}
               </a>
             </div>
           </div>

@@ -68,7 +68,7 @@ const en = {
     activities: {
       valley: {
         title: "Valle de la Luna",
-        text: "Discover unusual rock formations and landscapes just outside the city.",
+        text: "Discover incredible, unusual rock formations and landscapes just outside the city.",
         button: "Get directions",
       },
       cableCar: {
@@ -87,6 +87,80 @@ const en = {
         button: "Get directions",
       },
     },
+  },
+
+  restaurants: {
+    eyebrow: "WHERE TO EAT",
+    title: "Good food is part of the adventure.",
+    intro:
+      "Discover local flavors, casual spots, and places worth adding to your La Paz experience.",
+    items: {
+      manqa: {
+        name: "Manq'a Restaurante",
+        description:
+          "Bolivian cuisine with a contemporary touch, featuring local ingredients and flavors.",
+        address: "Av. 20 de Octubre #927, La Paz, Bolivia",
+      },
+      banais: {
+        name: "Café Restaurante Banais",
+        description:
+          "A cozy café and restaurant offering French-inspired dishes alongside local and international options.",
+        address: "Sagarnaga 161, La Paz, Bolivia",
+      },
+      cafeVida: {
+        name: "Café Vida",
+        description:
+          "A plant-based café serving smoothies, bowls, sandwiches, snacks, and other vegan options.",
+        address: "Pasaje Juan XXIII No. 187, La Paz, Bolivia",
+      },
+    },
+    button: "Get directions",
+  },
+
+  contact: {
+    eyebrow: "GET IN TOUCH",
+    title: "We'd love to hear from you.",
+    intro:
+      "Have a question about your stay, La Paz, or what to do in the city? Get in touch with our team.",
+
+    emailLabel: "Email",
+    phoneLabel: "Phone",
+    socialLabel: "Follow us",
+
+    highlightTitle: "Planning your stay?",
+    highlightText:
+      "Send us a message and we'll be happy to help with questions about the hostel, the city, or your visit.",
+    button: "Send us a message",
+  },
+
+  contactForm: {
+    eyebrow: "SEND US A MESSAGE",
+    title: "How can we help?",
+    intro:
+      "Have a question or need more information? Send us a message and we'll get back to you.",
+
+    name: "Name",
+    email: "Email",
+    subject: "Subject",
+    message: "Message",
+    button: "Send message",
+    success: "Thanks! Your message has been received.",
+  },
+
+  footer: {
+    description: "A welcoming place to stay while you explore La Paz, Bolivia.",
+
+    exploreTitle: "Explore",
+    about: "About",
+    laPaz: "La Paz",
+    thingsToDo: "Things to Do",
+    whereToEat: "Where to Eat",
+
+    contactTitle: "Contact",
+    sendMessage: "Send us a message",
+
+    rights: "All rights reserved.",
+    codedBy: "Coded by",
   },
 };
 

@@ -439,7 +439,8 @@ body {
 }
 
 .contact-form-section .section-intro {
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+  text-align: center;
 }
 
 .contact-form-section form {

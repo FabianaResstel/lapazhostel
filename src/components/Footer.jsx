@@ -2,41 +2,40 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
-function Footer() {
+function Footer({ t }) {
   return (
     <footer className="footer">
       <div className="container">
         <div className="row g-4">
           <div className="col-lg-5">
             <h2>La Paz Hostel</h2>
-
-            <p>A welcoming place to stay while you explore La Paz, Bolivia.</p>
+            <p>{t.footer.description}</p>
           </div>
 
           <div className="col-sm-6 col-lg-3">
-            <h3>Explore</h3>
+            <h3>{t.footer.exploreTitle}</h3>
 
             <ul>
               <li>
-                <a href="#about">About</a>
+                <a href="#about">{t.footer.about}</a>
               </li>
 
               <li>
-                <a href="#la-paz">La Paz</a>
+                <a href="#la-paz">{t.footer.laPaz}</a>
               </li>
 
               <li>
-                <a href="#explore">Things to Do</a>
+                <a href="#explore">{t.footer.thingsToDo}</a>
               </li>
 
               <li>
-                <a href="#eat">Where to Eat</a>
+                <a href="#eat">{t.footer.whereToEat}</a>
               </li>
             </ul>
           </div>
 
           <div className="col-sm-6 col-lg-4">
-            <h3>Contact</h3>
+            <h3>{t.footer.contactTitle}</h3>
 
             <ul>
               <li>
@@ -55,9 +54,10 @@ function Footer() {
               <li>
                 <a href="#contact-form">
                   <FontAwesomeIcon icon={faEnvelope} aria-hidden="true" />
-                  <span>Send us a message</span>
+                  <span>{t.footer.sendMessage}</span>
                 </a>
               </li>
+
               <li className="footer-social">
                 <a
                   href="https://www.instagram.com/"
@@ -65,7 +65,7 @@ function Footer() {
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FontAwesomeIcon icon={faInstagram} aria-hidden="true" />
                 </a>
 
                 <a
@@ -74,7 +74,7 @@ function Footer() {
                   rel="noopener noreferrer"
                   aria-label="Facebook"
                 >
-                  <FontAwesomeIcon icon={faFacebook} />
+                  <FontAwesomeIcon icon={faFacebook} aria-hidden="true" />
                 </a>
               </li>
             </ul>
@@ -82,9 +82,10 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 La Paz Hostel. All rights reserved.</p>
+          <p>© 2026 La Paz Hostel. {t.footer.rights}</p>
+
           <p>
-            Coded by{" "}
+            {t.footer.codedBy}{" "}
             <a
               href="https://www.instagram.com/codetravelgive/"
               target="_blank"

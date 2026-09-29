@@ -1,24 +1,31 @@
-function ContactForm() {
+import { useState } from "react";
+
+function ContactForm({ t }) {
+  const [submitted, setSubmitted] = useState(false);
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    setSubmitted(true);
+    event.target.reset();
+  }
+
   return (
     <section id="contact-form" className="contact-form-section">
       <div className="container">
         <div className="text-center">
-          <p className="section-eyebrow">SEND US A MESSAGE</p>
+          <p className="section-eyebrow">{t.contactForm.eyebrow}</p>
 
-          <h2>How can we help?</h2>
+          <h2>{t.contactForm.title}</h2>
 
-          <p className="section-intro">
-            Have a question or need more information? Send us a message and
-            we'll get back to you.
-          </p>
+          <p className="section-intro">{t.contactForm.intro}</p>
         </div>
 
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
-                  Name
+                  {t.contactForm.name}
                 </label>
 
                 <input
@@ -33,7 +40,7 @@ function ContactForm() {
 
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">
-                  Email
+                  {t.contactForm.email}
                 </label>
 
                 <input
@@ -48,7 +55,7 @@ function ContactForm() {
 
               <div className="mb-3">
                 <label htmlFor="subject" className="form-label">
-                  Subject
+                  {t.contactForm.subject}
                 </label>
 
                 <input
@@ -62,7 +69,7 @@ function ContactForm() {
 
               <div className="mb-4">
                 <label htmlFor="message" className="form-label">
-                  Message
+                  {t.contactForm.message}
                 </label>
 
                 <textarea
@@ -75,8 +82,14 @@ function ContactForm() {
               </div>
 
               <button type="submit" className="btn">
-                Send message
+                {t.contactForm.button}
               </button>
+
+              {submitted && (
+                <p className="contact-form-success" role="status">
+                  {t.contactForm.success}
+                </p>
+              )}
             </form>
           </div>
         </div>

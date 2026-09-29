@@ -88,6 +88,81 @@ const pt = {
       },
     },
   },
+
+  restaurants: {
+    eyebrow: "ONDE COMER",
+    title: "Boa comida faz parte da aventura.",
+    intro:
+      "Descubra sabores locais, lugares descontraídos e opções que vale a pena conhecer durante sua experiência em La Paz.",
+    items: {
+      manqa: {
+        name: "Manq'a Restaurante",
+        description:
+          "Culinária boliviana com um toque contemporâneo, usando ingredientes e sabores locais.",
+        address: "Av. 20 de Octubre #927, La Paz, Bolívia",
+      },
+      banais: {
+        name: "Café Restaurante Banais",
+        description:
+          "Um café e restaurante aconchegante que oferece pratos inspirados na culinária francesa, além de opções locais e internacionais.",
+        address: "Sagarnaga 161, La Paz, Bolívia",
+      },
+      cafeVida: {
+        name: "Café Vida",
+        description:
+          "Um café de culinária à base de plantas que oferece smoothies, bowls, sanduíches, lanches e outras opções veganas.",
+        address: "Pasaje Juan XXIII No. 187, La Paz, Bolívia",
+      },
+    },
+    button: "Ver direções",
+  },
+
+  contact: {
+    eyebrow: "FALE CON A GENTE",
+    title: "Adoraríamos falar com você.",
+    intro:
+      "Tem alguma dúvida sobre sua estadia, La Paz ou o que fazer na cidade? Entre em contato com nossa equipe.",
+
+    emailLabel: "E-mail",
+    phoneLabel: "Telefone",
+    socialLabel: "Siga a gente",
+
+    highlightTitle: "Planejando sua estadia?",
+    highlightText:
+      "Envie uma mensagem e teremos prazer em ajudar com dúvidas sobre o hostel, a cidade ou sua visita.",
+    button: "Envie uma mensagem",
+  },
+
+  contactForm: {
+    eyebrow: "ENVIE UMA MENSAGEM",
+    title: "Como podemos ajudar?",
+    intro:
+      "Tem alguma dúvida ou precisa de mais informações? Envie uma mensagem e entraremos em contato com você.",
+
+    name: "Nome",
+    email: "E-mail",
+    subject: "Assunto",
+    message: "Mensagem",
+    button: "Enviar mensagem",
+    success: "Obrigada! Recebemos sua mensagem.",
+  },
+
+  footer: {
+    description:
+      "Um lugar acolhedor para ficar enquanto você explora La Paz, Bolívia.",
+
+    exploreTitle: "Explorar",
+    about: "Sobre",
+    laPaz: "La Paz",
+    thingsToDo: "O Que Fazer",
+    whereToEat: "Onde Comer",
+
+    contactTitle: "Contato",
+    sendMessage: "Envie uma mensagem",
+
+    rights: "Todos os direitos reservados.",
+    codedBy: "Desenvolvido por",
+  },
 };
 
 export default pt;

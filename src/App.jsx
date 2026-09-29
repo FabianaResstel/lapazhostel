@@ -46,7 +46,7 @@ function Page() {
         <ContactForm t={t} />
       </main>
 
-      <Footer />
+      <Footer t={t} />
     </>
   );
 }
