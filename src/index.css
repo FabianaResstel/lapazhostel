@@ -600,6 +600,36 @@ body {
 
 @media (max-width: 992px) {
   .hero .btn-primary {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-eyebrow {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 28px;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    text-align: center;
     margin-bottom: 30px;
+  }
+
+  .about-section h2,
+  .why-stay-section h2,
+  .la-paz-section h2,
+  .things-to-do-section h2,
+  .restaurants-section h2,
+  .contact-section h2,
+  .contact-form-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .la-paz-highlight {
+    margin: 0 auto;
   }
 }
