@@ -1,9 +1,26 @@
+:root {
+  --navy: #173f5f;
+  --cream: #f8f3ea;
+  --coral: #c96b4b;
+  --coral-dark: #a95338;
+  --gold: #e6b84a;
+  --pale-blue: #dce8ec;
+  --card: #fffbf7;
+  --text: #263238;
+  --muted-text: #5f5555;
+  --highlight-pink: #f0dcd9;
+  --la-paz-blue: #bce5f3;
+  --section-padding: 100px 0;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #263238;
-  background-color: #f8f3ea;
+  color: var(--text);
+  background-color: var(--cream);
 }
+
+/* Hero */
 
 .hero {
   padding: 80px 0;
@@ -13,28 +30,28 @@ body {
   display: inline-block;
   margin-bottom: 28px;
   padding-bottom: 10px;
-  color: #c96b4b;
+  color: var(--coral);
   font-size: 1.7rem;
   font-weight: 700;
   letter-spacing: 2px;
-  border-bottom: 3px solid #e6b84a;
+  border-bottom: 3px solid var(--gold);
   position: relative;
 }
 
 .hero-eyebrow::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
   left: 50%;
   bottom: -7px;
-  background-color: #c96b4b;
+  background-color: var(--coral);
   transform: translateX(-50%) rotate(45deg);
 }
 
 .hero h1 {
   margin-bottom: 20px;
-  color: #173f5f;
+  color: var(--navy);
   font-size: 3.5rem;
   font-weight: 700;
 }
@@ -46,17 +63,18 @@ body {
   line-height: 1.7;
 }
 
-.hero .btn-primary {
-  background-color: #c96b4b;
-  border-color: #c96b4b;
+.hero .btn-primary,
+.about-section .btn-primary {
+  background-color: var(--coral);
+  border-color: var(--coral);
   padding: 12px 24px;
   border-radius: 8px;
-
 }
 
-.hero .btn-primary:hover {
-  background-color: #a95338;
-  border-color: #a95338;
+.hero .btn-primary:hover,
+.about-section .btn-primary:hover {
+  background-color: var(--coral-dark);
+  border-color: var(--coral-dark);
 }
 
 .hero-image {
@@ -66,65 +84,158 @@ body {
   border-radius: 24px;
 }
 
+/* Navbar */
+
 .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
   padding: 18px 0;
-  background-color: #173f5f;
+  background-color: var(--navy);
 }
 
 .navbar-brand {
-  color: #f8f3ea;
+  color: var(--cream);
   font-size: 1.4rem;
   font-weight: 700;
 }
 
 .navbar-brand:focus {
-  color: #f8f3ea;
+  color: var(--cream);
 }
 
 .navbar-brand:hover {
-  color: #e6b84a;
+  color: var(--gold);
 }
 
 .navbar .nav-link {
   margin-left: 20px;
-  color: #f8f3ea;
+  color: var(--cream);
   font-weight: 500;
 }
 
 .navbar .nav-link:hover {
-  color: #e6b84a;
+  color: var(--gold);
 }
 
 .navbar-toggler {
-  border-color: #f8f3ea;
+  border-color: var(--cream);
 }
 
 .navbar-toggler-icon {
   filter: brightness(0) invert(1);
 }
 
-.about-section {
-  padding: 100px 0;
-  background-color: #fffbf7;
+.navbar .nav-link.active {
+  color: var(--gold);
 }
+
+/* Shared section headings */
+
+.about-section h2,
+.why-stay-section h2,
+.la-paz-section h2,
+.things-to-do-section h2,
+.restaurants-section h2,
+.contact-section h2,
+.contact-form-section h2,
+.reservation-section h2,
+.property-section h1,
+.rooms-section h2 {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.about-section h2,
+.la-paz-section h2,
+.contact-section h2 {
+  margin-bottom: 24px;
+  font-size: 2.7rem;
+}
+
+.why-stay-section h2,
+.things-to-do-section h2,
+.restaurants-section h2,
+.contact-form-section h2,
+.reservation-section h2 {
+  margin-bottom: 20px;
+  font-size: 2.7rem;
+}
+
+.property-section h1 {
+  margin-bottom: 20px;
+  font-size: 2.7rem;
+}
+
+.rooms-section h2 {
+  margin-bottom: 50px;
+  font-size: 2.7rem;
+}
+
+/* Shared section styles */
+
+.about-section {
+  padding: var(--section-padding);
+  background-color: var(--card);
+}
+
+.why-stay-section {
+  padding: var(--section-padding);
+  background-color: var(--cream);
+}
+
+.la-paz-section {
+  position: relative;
+  padding: var(--section-padding);
+  background-color: var(--la-paz-blue);
+}
+
+.things-to-do-section {
+  padding: var(--section-padding);
+  background-color: var(--card);
+}
+
+.restaurants-section {
+  padding: var(--section-padding);
+  background-color: var(--cream);
+}
+
+.contact-section {
+  padding: var(--section-padding);
+  background-color: var(--card);
+}
+
+.contact-form-section {
+  padding: var(--section-padding);
+  background-color: var(--cream);
+}
+
+.property-section {
+  padding: var(--section-padding);
+  background-color: var(--card);
+}
+
+.rooms-section {
+  padding: var(--section-padding);
+  background-color: var(--cream);
+}
+
+.reservation-section {
+  padding: var(--section-padding);
+  background-color: var(--card);
+}
+
+/* Section eyebrow */
 
 .section-eyebrow {
   margin-bottom: 12px;
-  color: #c96b4b;
+  color: var(--coral);
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
-.about-section h2 {
-  margin-bottom: 24px;
-  color: #173f5f;
-  font-size: 2.7rem;
-  font-weight: 700;
-}
+/* About */
 
 .about-section p {
   max-width: 560px;
@@ -136,13 +247,13 @@ body {
   margin-left: auto;
   max-width: 420px;
   padding: 40px;
-  background-color: #f0dcd9;
+  background-color: var(--highlight-pink);
   border-radius: 24px;
 }
 
 .about-highlight h3 {
   margin-bottom: 16px;
-  color: #173f5f;
+  color: var(--navy);
   font-size: 1.5rem;
   line-height: 1.4;
 }
@@ -151,17 +262,7 @@ body {
   margin-bottom: 0;
 }
 
-.why-stay-section {
-  padding: 100px 0;
-  background-color: #f8f3ea;
-}
-
-.why-stay-section h2 {
-  margin-bottom: 20px;
-  color: #173f5f;
-  font-size: 2.7rem;
-  font-weight: 700;
-}
+/* Why Stay */
 
 .section-intro {
   max-width: 650px;
@@ -172,13 +273,13 @@ body {
 .feature-card {
   height: 100%;
   padding: 32px;
-  background-color: #fffbf7;
+  background-color: var(--card);
   border-radius: 20px;
 }
 
 .feature-card h3 {
   margin-bottom: 14px;
-  color: #173f5f;
+  color: var(--navy);
   font-size: 1.35rem;
 }
 
@@ -187,11 +288,7 @@ body {
   line-height: 1.6;
 }
 
-.la-paz-section {
-  position: relative;
-  padding: 100px 0;
-  background-color: #bce5f3;
-}
+/* La Paz */
 
 .la-paz-section::before {
   content: "";
@@ -209,13 +306,6 @@ body {
   z-index: 1;
 }
 
-.la-paz-section h2 {
-  margin-bottom: 24px;
-  color: #173f5f;
-  font-size: 2.7rem;
-  font-weight: 700;
-}
-
 .la-paz-section p {
   max-width: 560px;
   margin-bottom: 20px;
@@ -226,13 +316,13 @@ body {
   margin-left: auto;
   max-width: 420px;
   padding: 40px;
-  background-color: #fffbf7;
+  background-color: var(--card);
   border-radius: 24px;
 }
 
 .la-paz-highlight h3 {
   margin-bottom: 16px;
-  color: #173f5f;
+  color: var(--navy);
   font-size: 1.5rem;
   line-height: 1.4;
 }
@@ -241,44 +331,46 @@ body {
   margin-bottom: 0;
 }
 
-.things-to-do-section {
-  padding: 100px 0;
-  background-color: #fffbf7;
-}
-
-.things-to-do-section h2 {
-  margin-bottom: 20px;
-  color: #173f5f;
-  font-size: 2.7rem;
-  font-weight: 700;
-}
+/* Activities */
 
 .activity-card {
   height: 100%;
   overflow: hidden;
-  background-color: #f8f3ea;
+  background-color: var(--cream);
   border-radius: 20px;
+}
+
+.activity-image,
+.restaurant-image,
+.room-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pale-blue);
+  color: var(--navy);
+  font-weight: 600;
 }
 
 .activity-image {
   height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #dce8ec;
-  color: #173f5f;
-  font-weight: 600;
 }
 
-.activity-image img {
+.activity-image img,
+.restaurant-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.activity-card h3 {
+.activity-card h3,
+.restaurant-card h3,
+.room-card h3 {
   margin: 24px 24px 14px;
-  color: #173f5f;
+  color: var(--navy);
+}
+
+.activity-card h3,
+.restaurant-card h3 {
   font-size: 1.35rem;
 }
 
@@ -289,58 +381,29 @@ body {
 
 .activity-card .btn {
   margin: 0 24px 24px;
-  border-color: #c96b4b;
-  color: #f8f3ea;
-  background-color: #c96b4b;
+  border-color: var(--coral);
+  color: var(--cream);
+  background-color: var(--coral);
   padding: 12px 24px;
-
 }
 
 .activity-card .btn:hover {
-  background-color: #f8f3ea;
-  border-color: #c96b4b;
-  color: #c96b4b;
+  background-color: var(--cream);
+  border-color: var(--coral);
+  color: var(--coral);
 }
 
-.restaurants-section {
-  padding: 100px 0;
-  background-color: #f8f3ea;
-}
-
-.restaurants-section h2 {
-  margin-bottom: 20px;
-  color: #173f5f;
-  font-size: 2.7rem;
-  font-weight: 700;
-}
+/* Restaurants */
 
 .restaurant-card {
   height: 100%;
   overflow: hidden;
-  background-color: #fffbf7;
+  background-color: var(--card);
   border-radius: 20px;
 }
 
 .restaurant-image {
   height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #dce8ec;
-  color: #173f5f;
-  font-weight: 600;
-}
-
-.restaurant-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.restaurant-card h3 {
-  margin: 24px 24px 14px;
-  color: #173f5f;
-  font-size: 1.35rem;
 }
 
 .restaurant-rating {
@@ -352,16 +415,16 @@ body {
 }
 
 .restaurant-rating span:first-child {
-  color: #e6b84a;
+  color: var(--gold);
   letter-spacing: 1px;
 }
 
 .restaurant-rating strong {
-  color: #173f5f;
+  color: var(--navy);
 }
 
 .restaurant-rating span:last-child {
-  color: #5f5555;
+  color: var(--muted-text);
 }
 
 .restaurant-card p {
@@ -370,35 +433,25 @@ body {
 }
 
 .restaurant-card .restaurant-address {
-  color: #5f5555;
+  color: var(--muted-text);
   font-size: 0.95rem;
 }
 
 .restaurant-card .btn {
   margin: 8px 24px 24px;
   padding: 12px 24px;
-  background-color: #c96b4b;
-  border-color: #c96b4b;
-  color: #f8f3ea;
+  background-color: var(--coral);
+  border-color: var(--coral);
+  color: var(--cream);
 }
 
 .restaurant-card .btn:hover {
-  background-color: #a95338;
-  border-color: #a95338;
-  color: #f8f3ea;
+  background-color: var(--coral-dark);
+  border-color: var(--coral-dark);
+  color: var(--cream);
 }
 
-.contact-section {
-  padding: 100px 0;
-  background-color: #fffbf7;
-}
-
-.contact-section h2 {
-  margin-bottom: 24px;
-  color: #173f5f;
-  font-size: 2.7rem;
-  font-weight: 700;
-}
+/* Contact */
 
 .contact-intro {
   max-width: 560px;
@@ -412,16 +465,16 @@ body {
 }
 
 .contact-info strong {
-  color: #173f5f;
+  color: var(--navy);
 }
 
 .contact-info a {
-  color: #c96b4b;
+  color: var(--coral);
   text-decoration: none;
 }
 
 .contact-info a:hover {
-  color: #a95338;
+  color: var(--coral-dark);
   text-decoration: underline;
 }
 
@@ -429,13 +482,13 @@ body {
   max-width: 420px;
   margin-left: auto;
   padding: 40px;
-  background-color: #dce8ec;
+  background-color: var(--pale-blue);
   border-radius: 24px;
 }
 
 .contact-highlight h3 {
   margin-bottom: 16px;
-  color: #173f5f;
+  color: var(--navy);
   font-size: 1.5rem;
   line-height: 1.4;
 }
@@ -447,28 +500,18 @@ body {
 
 .contact-highlight .btn {
   padding: 12px 24px;
-  background-color: #c96b4b;
-  border-color: #c96b4b;
-  color: #f8f3ea;
+  background-color: var(--coral);
+  border-color: var(--coral);
+  color: var(--cream);
 }
 
 .contact-highlight .btn:hover {
-  background-color: #a95338;
-  border-color: #a95338;
-  color: #f8f3ea;
+  background-color: var(--coral-dark);
+  border-color: var(--coral-dark);
+  color: var(--cream);
 }
 
-.contact-form-section {
-  padding: 100px 0;
-  background-color: #f8f3ea;
-}
-
-.contact-form-section h2 {
-  margin-bottom: 20px;
-  color: #173f5f;
-  font-size: 2.7rem;
-  font-weight: 700;
-}
+/* Contact Form */
 
 .contact-form-section .section-intro {
   margin: 0 auto 50px;
@@ -477,57 +520,59 @@ body {
 
 .contact-form-section form {
   padding: 40px;
-  background-color: #fffbf7;
+  background-color: var(--card);
   border-radius: 24px;
 }
 
 .contact-form-section .form-label {
   margin-bottom: 8px;
-  color: #173f5f;
+  color: var(--navy);
   font-weight: 600;
 }
 
 .contact-form-section .form-control {
   padding: 12px 16px;
-  border: 1px solid #dce8ec;
+  border: 1px solid var(--pale-blue);
   border-radius: 8px;
-  background-color: #f8f3ea;
+  background-color: var(--cream);
 }
 
 .contact-form-section .form-control:focus {
-  border-color: #c96b4b;
+  border-color: var(--coral);
   box-shadow: 0 0 0 0.2rem rgba(201, 107, 75, 0.15);
 }
 
 .contact-form-section .btn {
   padding: 12px 24px;
-  background-color: #c96b4b;
-  border-color: #c96b4b;
-  color: #f8f3ea;
+  background-color: var(--coral);
+  border-color: var(--coral);
+  color: var(--cream);
 }
 
 .contact-form-section .btn:hover {
-  background-color: #a95338;
-  border-color: #a95338;
-  color: #f8f3ea;
+  background-color: var(--coral-dark);
+  border-color: var(--coral-dark);
+  color: var(--cream);
 }
+
+/* Footer */
 
 .footer {
   padding: 70px 0 30px;
-  background-color: #173f5f;
-  color: #f8f3ea;
+  background-color: var(--navy);
+  color: var(--cream);
 }
 
 .footer h2 {
   margin-bottom: 16px;
-  color: #e6b84a;
+  color: var(--gold);
   font-size: 1.6rem;
   font-weight: 700;
 }
 
 .footer h3 {
   margin-bottom: 20px;
-  color: #e6b84a;
+  color: var(--gold);
   font-size: 1.1rem;
   font-weight: 700;
 }
@@ -535,7 +580,7 @@ body {
 .footer p {
   max-width: 420px;
   margin-bottom: 0;
-  color: #dce8ec;
+  color: var(--pale-blue);
   line-height: 1.7;
 }
 
@@ -550,12 +595,12 @@ body {
 }
 
 .footer a {
-  color: #dce8ec;
+  color: var(--pale-blue);
   text-decoration: none;
 }
 
 .footer a:hover {
-  color: #e6b84a;
+  color: var(--gold);
 }
 
 .footer li a {
@@ -591,12 +636,159 @@ body {
 }
 
 .footer-bottom a {
-  color: #e6b84a;
+  color: var(--gold);
 }
 
 .footer-bottom a:hover {
-  color: #f8f3ea;
+  color: var(--cream);
 }
+
+/* Property */
+
+.property-section .section-intro,
+.reservation-section .section-intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.property-image {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pale-blue);
+  color: var(--navy);
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.property-image img,
+.room-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-section h2 {
+  margin-top: 20px;
+  color: var(--navy);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Rooms */
+
+.room-card {
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--card);
+  border-radius: 20px;
+}
+
+.room-image {
+  height: 280px;
+}
+
+.room-card h3 {
+  font-size: 1.5rem;
+}
+
+.room-card p {
+  margin: 0 24px 16px;
+  line-height: 1.6;
+}
+
+.room-card p:last-child {
+  margin-bottom: 24px;
+  color: var(--coral);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Reservation */
+
+.reservation-placeholder {
+  max-width: 800px;
+  margin: 50px auto 0;
+  padding: 50px;
+  background-color: var(--cream);
+  border-radius: 24px;
+  color: var(--navy);
+}
+
+.reservation-placeholder .form-label {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.reservation-placeholder .form-control {
+  padding: 12px 14px;
+  border: 1px solid var(--pale-blue);
+  border-radius: 10px;
+}
+
+.reservation-placeholder .form-control:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 0.2rem rgba(230, 184, 74, 0.2);
+}
+
+.reservation-placeholder .form-check {
+  margin-bottom: 10px;
+}
+
+.reservation-placeholder .form-check-input {
+  border-color: var(--navy);
+}
+
+.reservation-placeholder .form-check-input:checked {
+  background-color: var(--navy);
+  border-color: var(--navy);
+}
+
+.reservation-summary {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: var(--card);
+  border-radius: 14px;
+}
+
+.reservation-summary p {
+  margin: 0 0 8px;
+}
+
+.reservation-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.reservation-placeholder .btn {
+  margin-top: 10px;
+  padding: 12px 28px;
+  background-color: var(--coral);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.reservation-placeholder .btn:hover {
+  background-color: var(--coral-dark);
+  color: #fff;
+}
+
+.reservation-placeholder .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.reservation-success {
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+/* Responsive */
 
 @media (max-width: 992px) {
   .hero .btn-primary {
@@ -605,6 +797,25 @@ body {
 }
 
 @media (max-width: 576px) {
+  .about-section .btn-primary {
+    margin-bottom: 40px;
+  }
+
+  .reservation-placeholder {
+    padding: 30px 20px;
+  }
+
+  .property-section h1,
+  .rooms-section h2,
+  .reservation-section h2 {
+    font-size: 2.1rem;
+  }
+
+  .property-image,
+  .room-image {
+    height: 220px;
+  }
+
   .hero-eyebrow {
     display: block;
     width: fit-content;
@@ -631,5 +842,11 @@ body {
 
   .la-paz-highlight {
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .property-section .section-intro {
+    white-space: nowrap;
   }
 }

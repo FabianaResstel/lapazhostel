@@ -23,6 +23,53 @@ const en = {
       "Whether you're here for a few days or staying a little longer, you'll have a relaxed place to rest, meet other travelers, and feel at home.",
     highlightTitle: "Feel welcome. Stay comfortable. Explore freely.",
     highlightText: "A clean and friendly base for your La Paz adventure.",
+    button: "Check Our Rooms",
+  },
+  property: {
+    eyebrow: "OUR PROPERTY",
+    title: "Stay, relax, and feel at home.",
+    intro:
+      "Take a look at our spaces, choose the room that fits your stay, and plan your visit to La Paz.",
+
+    facilities: {
+      entrance: "Hostel Entrance",
+      dining: "Dining Room",
+    },
+
+    rooms: {
+      eyebrow: "OUR ROOMS",
+      title: "Choose your room.",
+      perNight: "per night",
+      bathroom: "Private bathroom shared by the guests of the room.",
+
+      fourBed: {
+        title: "4-Bed Room",
+        description:
+          "A shared room with four beds, ideal for travelers looking for a comfortable and affordable stay.",
+      },
+
+      sixBed: {
+        title: "6-Bed Room",
+        description:
+          "A shared room with six beds, a simple and affordable option for meeting fellow travelers.",
+      },
+    },
+
+    reservation: {
+      eyebrow: "PLAN YOUR STAY",
+      title: "Book your stay.",
+      intro: "Choose your room and dates to see the total cost of your stay.",
+      chooseRoom: "Choose your room",
+      fourBed: "4-Bed Room — $15/night",
+      sixBed: "6-Bed Room — $10/night",
+      checkIn: "Check-in",
+      checkOut: "Check-out",
+      nights: "Nights",
+      total: "Total",
+      button: "Book Now",
+      success:
+        "Your reservation request has been received. This is a front-end demonstration, so no payment or actual reservation has been made.",
+    },
   },
 
   whyStay: {

@@ -1,4 +1,4 @@
-function About({ t }) {
+function About({ t, lang }) {
   return (
     <section id="about" className="about-section">
       <div className="container">
@@ -11,6 +11,9 @@ function About({ t }) {
             <p>{t.about.paragraph1}</p>
 
             <p>{t.about.paragraph2}</p>
+            <a href={`/${lang}/property`} className="btn btn-primary">
+              {t.about.button}
+            </a>
           </div>
 
           <div className="col-lg-6">

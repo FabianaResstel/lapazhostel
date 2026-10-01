@@ -23,6 +23,54 @@ const es = {
       "Ya sea que te quedes unos días o un poco más, tendrás un lugar tranquilo para descansar, conocer a otros viajeros y sentirte como en casa.",
     highlightTitle: "Siéntete bienvenido. Quédate cómodo. Explora libremente.",
     highlightText: "Una base limpia y acogedora para tu aventura en La Paz.",
+    button: "Conoce Nuestras Habitaciones",
+  },
+  property: {
+    eyebrow: "NUESTRO HOSTEL",
+    title: "Quédate, relájate y siéntete como en casa.",
+    intro:
+      "Conoce nuestros espacios, elige la habitación que mejor se adapte a tu estadía y planifica tu visita a La Paz.",
+
+    facilities: {
+      entrance: "Entrada del Hostel",
+      dining: "Comedor",
+    },
+
+    rooms: {
+      eyebrow: "NUESTRAS HABITACIONES",
+      title: "Elige tu habitación.",
+      perNight: "por noche",
+      bathroom: "Baño privado compartido por los huéspedes de la habitación.",
+
+      fourBed: {
+        title: "Habitación de 4 Camas",
+        description:
+          "Una habitación compartida con cuatro camas, ideal para viajeros que buscan una estadía cómoda y económica.",
+      },
+
+      sixBed: {
+        title: "Habitación de 6 Camas",
+        description:
+          "Una habitación compartida con seis camas, una opción sencilla y económica para conocer a otros viajeros.",
+      },
+    },
+
+    reservation: {
+      eyebrow: "PLANIFICA TU ESTADÍA",
+      title: "Reserva tu estadía.",
+      intro:
+        "Elige tu habitación y las fechas para ver el costo total de tu estadía.",
+      chooseRoom: "Elige tu habitación",
+      fourBed: "Habitación de 4 Camas — $15/noche",
+      sixBed: "Habitación de 6 Camas — $10/noche",
+      checkIn: "Entrada",
+      checkOut: "Salida",
+      nights: "Noches",
+      total: "Total",
+      button: "Reservar Ahora",
+      success:
+        "Hemos recibido tu solicitud de reserva. Esta es una demostración de la parte visual, por lo que no se ha realizado ningún pago ni reserva real.",
+    },
   },
 
   whyStay: {

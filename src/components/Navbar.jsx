@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 
 function Navbar({ t }) {
-  const { lang } = useParams();
+  const { lang, page } = useParams();
 
   return (
     <nav className="navbar navbar-expand-lg">
@@ -25,31 +25,31 @@ function Navbar({ t }) {
         <div className="collapse navbar-collapse" id="mainNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#about">
+              <a className="nav-link" href={`/${lang}#about`}>
                 {t.navbar.about}
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#la-paz">
+              <a className="nav-link" href={`/${lang}#la-paz`}>
                 {t.navbar.laPaz}
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#explore">
+              <a className="nav-link" href={`/${lang}#explore`}>
                 {t.navbar.explore}
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#eat">
+              <a className="nav-link" href={`/${lang}#eat`}>
                 {t.navbar.eat}
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <a className="nav-link" href={`/${lang}#contact`}>
                 {t.navbar.contact}
               </a>
             </li>
@@ -67,17 +67,26 @@ function Navbar({ t }) {
 
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/en">
+                  <Link
+                    className="dropdown-item"
+                    to={`/en${page ? `/${page}` : ""}`}
+                  >
                     English
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/es">
+                  <Link
+                    className="dropdown-item"
+                    to={`/es${page ? `/${page}` : ""}`}
+                  >
                     Español
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/pt">
+                  <Link
+                    className="dropdown-item"
+                    to={`/pt${page ? `/${page}` : ""}`}
+                  >
                     Português
                   </Link>
                 </li>

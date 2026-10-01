@@ -23,6 +23,55 @@ const pt = {
       "Seja para alguns dias ou para uma estadia um pouco mais longa, você terá um lugar tranquilo para descansar, conhecer outros viajantes e se sentir em casa.",
     highlightTitle: "Sinta-se bem-vindo. Fique confortável. Explore à vontade.",
     highlightText: "Uma base limpa e acolhedora para sua aventura em La Paz.",
+    button: "Veja Nossos Quartos",
+  },
+
+  property: {
+    eyebrow: "NOSSO HOSTEL",
+    title: "Fique, relaxe e sinta-se em casa.",
+    intro:
+      "Conheça nossos espaços, escolha o quarto ideal para sua estadia e planeje sua visita a La Paz.",
+
+    facilities: {
+      entrance: "Entrada do Hostel",
+      dining: "Sala de Jantar",
+    },
+
+    rooms: {
+      eyebrow: "NOSSOS QUARTOS",
+      title: "Escolha seu quarto.",
+      perNight: "por noite",
+      bathroom: "Banheiro privativo compartilhado pelos hóspedes deste quarto.",
+
+      fourBed: {
+        title: "Quarto com 4 Camas",
+        description:
+          "Um quarto compartilhado com quatro camas, ideal para viajantes que procuram uma estadia confortável e econômica.",
+      },
+
+      sixBed: {
+        title: "Quarto com 6 Camas",
+        description:
+          "Um quarto compartilhado com seis camas, uma opção simples e econômica para conhecer outros viajantes.",
+      },
+    },
+
+    reservation: {
+      eyebrow: "PLANEJE SUA ESTADIA",
+      title: "Reserve sua estadia.",
+      intro:
+        "Escolha seu quarto e as datas para ver o custo total da sua estadia.",
+      chooseRoom: "Escolha seu quarto",
+      fourBed: "Quarto com 4 Camas — $15/noite",
+      sixBed: "Quarto com 6 Camas — $10/noite",
+      checkIn: "Check-in",
+      checkOut: "Check-out",
+      nights: "Noites",
+      total: "Total",
+      button: "Reservar Agora",
+      success:
+        "Recebemos sua solicitação de reserva. Esta é uma demonstração da parte visual, portanto nenhum pagamento ou reserva real foi realizado.",
+    },
   },
 
   whyStay: {
@@ -118,7 +167,7 @@ const pt = {
   },
 
   contact: {
-    eyebrow: "FALE CON A GENTE",
+    eyebrow: "FALE COM A GENTE",
     title: "Adoraríamos falar com você.",
     intro:
       "Tem alguma dúvida sobre sua estadia, La Paz ou o que fazer na cidade? Entre em contato com nossa equipe.",
