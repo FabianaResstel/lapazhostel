@@ -1,7 +1,7 @@
 import { useState } from "react";
 import receptionArea from "../images/reception.webp";
 import diningRoom from "../images/dining-room.webp";
-import fourBeds from "../images/four-beds.webp";
+import fourBeds from "../images/four-beds-updated.jpg";
 import sixBeds from "../images/six-beds.webp";
 const rooms = [
   { id: "fourBed", price: 15, image: fourBeds },
