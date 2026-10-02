@@ -1,5 +1,5 @@
 import { useState } from "react";
-import hostelEntrance from "../images/hostel-entrance.webp";
+import receptionArea from "../images/reception.webp";
 import diningRoom from "../images/dining-room.webp";
 import fourBeds from "../images/four-beds.webp";
 import sixBeds from "../images/six-beds.webp";
@@ -48,7 +48,7 @@ function Property({ t }) {
               {" "}
               <div className="property-image">
                 {" "}
-                <img src={hostelEntrance} alt="Hostel entrance" />{" "}
+                <img src={receptionArea} alt="Reception area" />{" "}
               </div>{" "}
               <h2>{t.property.facilities.entrance}</h2>{" "}
             </div>{" "}

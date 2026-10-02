@@ -32,7 +32,7 @@ const es = {
       "Conoce nuestros espacios, elige la habitación que mejor se adapte a tu estadía y planifica tu visita a La Paz.",
 
     facilities: {
-      entrance: "Entrada del Hostel",
+      entrance: "Área de Recepción",
       dining: "Comedor",
     },
 

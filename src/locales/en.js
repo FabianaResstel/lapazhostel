@@ -32,7 +32,7 @@ const en = {
       "Take a look at our spaces, choose the room that fits your stay, and plan your visit to La Paz.",
 
     facilities: {
-      entrance: "Hostel Entrance",
+      entrance: "Reception Area",
       dining: "Dining Room",
     },
 

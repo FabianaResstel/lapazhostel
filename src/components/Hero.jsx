@@ -1,4 +1,4 @@
-import heroImage from "../images/hero.jpg";
+import heroImage from "../images/hostel-entrance.webp";
 
 function Hero({ t }) {
   return (
